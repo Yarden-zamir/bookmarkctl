@@ -4,6 +4,8 @@
 brew install Yarden-zamir/tap/bookmarkctl
 ```
 
+Homebrew tap: [Yarden-zamir/homebrew-tap](https://github.com/Yarden-zamir/homebrew-tap)
+
 A Manifest V3 Chrome extension controlled by a local FastAPI command queue and a Typer CLI.
 
 Chrome extensions cannot host a REST API directly, so this project uses polling:
