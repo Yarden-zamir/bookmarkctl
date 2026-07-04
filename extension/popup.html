@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bookmark REST Controller</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <h1>Bookmark REST Controller</h1>
+      <label>
+        API base URL
+        <input id="apiBaseUrl" type="url" required>
+      </label>
+      <label>
+        Client ID
+        <input id="clientId" type="text" required>
+      </label>
+      <label>
+        Poll interval seconds
+        <input id="pollIntervalSeconds" type="number" min="1" step="1" required>
+      </label>
+      <label class="inline">
+        <input id="enabled" type="checkbox">
+        Enabled
+      </label>
+      <div class="actions">
+        <button id="save" type="button">Save</button>
+        <button id="pollNow" type="button">Poll now</button>
+      </div>
+      <p id="status" role="status"></p>
+    </main>
+    <script src="popup.js" type="module"></script>
+  </body>
+</html>
